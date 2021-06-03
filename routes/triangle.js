@@ -30,6 +30,9 @@ exports.triangle_checker = function (a, b, c) {
         return 'Not a Triangle';
     }
 
+    var asq = a * a;
+    var bsq = b * b;
+    var csq = c * c;
 
     if(a==b && b==c){
         return 'Equilateral';
@@ -37,6 +40,16 @@ exports.triangle_checker = function (a, b, c) {
 
     if(a==b || b==c || a==c){
         return 'Isosceles';
+    }
+
+    if(Math.sqrt(asq+bsq) == c){
+        return 'Right Triangle';
+    }
+    if(Math.sqrt(asq+csq) == b){
+        return 'Right Triangle';
+    }
+    if(Math.sqrt(bsq+csq) == a){
+        return 'Right Triangle';
     }
 
     return 'Scalene'

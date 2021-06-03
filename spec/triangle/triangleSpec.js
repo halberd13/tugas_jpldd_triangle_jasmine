@@ -72,6 +72,30 @@ describe("Addition",function(){
     });
 });
 
+describe("Addition",function(){
+    it("[NormalCase] 10. A = 3, B = 4, C = 5 => Right Triangle",function() {
+        console.log('[NormalCase] 10. A = 3, B = 4, C = 5 => Right Triangle');
+        var value=app.triangle_checker(3,4,5);
+        expect(value).toEqual("Right Triangle");
+    });
+});
+
+describe("Addition",function(){
+    it("[NormalCase] 11. A = 3, B = 5, C = 4 => Right Triangle",function() {
+        console.log('[NormalCase] 11. A = 3, B = 5, C = 4 => Right Triangle');
+        var value=app.triangle_checker(3,4,5);
+        expect(value).toEqual("Right Triangle");
+    });
+});
+
+describe("Addition",function(){
+    it("[NormalCase] 12. A = 5, B = 3, C = 4 => Right Triangle",function() {
+        console.log('[NormalCase] 12. A = 5, B = 3, C = 4 => Right Triangle');
+        var value=app.triangle_checker(5,3,4);
+        expect(value).toEqual("Right Triangle");
+    });
+});
+
 //Abnormal Case 
 describe("Addition",function(){
     it('[AbnormalCase] 1. A = 0, B = 7, C = 7 => "a":0 must greater than 0',function() {
